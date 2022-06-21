@@ -19,9 +19,9 @@ public class Course {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int courseId;
     private String courseName;
-   /*@ManyToMany(mappedBy = "courses")
+   @ManyToMany(mappedBy = "courses")
     private List<Student> students;
     @JsonIgnore
     @OneToMany(mappedBy = "course")
-    private List<Book> books; */
+    private List<Book> books; 
 }
