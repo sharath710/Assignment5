@@ -18,10 +18,10 @@ public class Book {
     private int bookId;
     private String bookName;
 
-   /*@ManyToMany(cascade = CascadeType.ALL)
+   @ManyToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "courseid", referencedColumnName ="courseId");
 
     @ManyToOne
     @JoinTable(name="book_author")
-    private List<Author> author;*/
+    private List<Author> author;
 }
